@@ -1,0 +1,36 @@
+#  a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
+#and write a program that prints out all the elements of the list that are less than 5.
+#Extras:
+#Instead of printing the elements one by one, make a new list that has all the elements less than 5 from this list in it
+# and print out this new list.
+#Write this in one line of Python.
+#Ask the user for a number and return a list that contains only elements from the original list a that are
+# smaller than that number given by the user.
+#1)
+a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
+for element in a:
+    if element <= 5:
+        print((element))
+
+#2)
+print([aa for aa in a if aa < 5])
+
+#3)
+num = int(input("Enter a number: "))
+a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
+for element in a:
+    if element <= num:
+        print((element))
+
+
+
+# long form of #2
+a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
+for numbers in a:
+if numbers <5:
+print(numbers)
+# i've used aa instead of numbers to save time, but it can be done with anything!
+#So, copy paste the lines above in this order to get what above #2 has with minor modification
+# : "line 4" + "line 2" + "line 3"
+
+print([numbers for numbers in a if numbers <5])
